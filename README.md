@@ -1,3 +1,6 @@
+| WIP: This theme is still being updated from the original n1-agapanthus theme created by taniadaniela to work for MailSpring. Importing it in it's current state will result in a broken UI. |
+| --- |
+
 # Agapanthus
 
 Inspired on Inbox by Google. Based on [Taiga](https://github.com/noahbuscher/N1-Taiga).
@@ -8,6 +11,6 @@ Inspired on Inbox by Google. Based on [Taiga](https://github.com/noahbuscher/N1-
 
 ## Installing
 
-1. [Download](https://nylas.com/n1) Nylas N1 email client if you have not yet
-2. [Just download the master branch](https://github.com/taniadaniela/agapanthus)
-3. Open `N1>Install theme` and select the folder.
+1. [Download](https://getmailspring.com/) Mailspring email client if you have not yet
+2. [Just download the master branch](https://github.com/danieljimeneznz/mailspring-agapanthus)
+3. Open `Install theme` and select the folder.

@@ -1,9 +1,35 @@
-@import "variables";
+/*
+Include the standard variables from Mailspring's base theme:
+https://github.com/Foundry376/Mailspring/blob/master/app/static/base/ui-variables.less#L37:L40
+*/
+@import "base/ui-variables";
 
-@accent-primary:         @taiga-light;
-@accent-primary-dark:    darken(@taiga-light, 20%);
+@inbox: #1a73e8;
+@inbox-lighter: #3684eb;
+@darkside: rgb(33, 37, 43);
+@lightside: #f2f2f2;
 
+/**
+ * Colors
+ */
+@taiga-light: darken(#a3acb1, 10%);
+@taiga-lighter: @lightside;
+@taiga-dark: @darkside;
+@taiga-accent: @inbox;
+@white: #ffffff;
+
+/**
+ * Borders
+ */
+@base-border-radius: 4px;
+
+@accent-primary: @taiga-light;
+@accent-primary-dark: darken(@accent-primary, 20%);
+
+@background-primary: @white;
 @background-secondary: @white;
+@background-tertiary: @taiga-lighter;
+
 @text-color: @taiga-dark;
 @text-color-subtle: lighten(@taiga-dark, 20%);
 @text-color-very-subtle: @taiga-light;
@@ -17,7 +43,26 @@
 @btn-default-bg-color: @white;
 @btn-default-text-color: @taiga-light;
 @background-gradient: none;
-@compose-buttom-color: #d23f31;
-@compose-buttom-radius: 999px;
-@toolbar-bg: #4285f4;
+
+@compose-button-color: #d23f31;
+@compose-button-radius: 999px;
+
+@toolbar-bg: @inbox;
 @header-bar-height: 50px;
+
+// TEMP MISSING VARIABLES FROM THEME...
+
+@text-color-link: @accent-primary;
+@text-color-link-hover: @accent-primary-dark;
+@text-color-link-active: @accent-primary-dark;
+
+@text-color-search-match: #fff000;
+@text-color-search-current-match: #ff8b1a;
+
+@border-color-primary: lighten(@background-primary, 10%);
+@border-color-secondary: lighten(@background-secondary, 10%);
+@border-color-tertiary: lighten(@background-tertiary, 10%);
+@border-color-divider: @border-color-secondary;
+
+@padding-base-vertical: 5px;
+@padding-base-horizontal: 12px;

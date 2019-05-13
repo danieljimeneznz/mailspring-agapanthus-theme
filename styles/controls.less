@@ -1,9 +1,13 @@
-@import "variables";
+@import "ui-variables";
 
 /**
  * Buttons
  */
-.btn-toolbar, .token, .actions>.btn, .new-package>.btn, .appearance-mode-switch>.btn {
+.btn-toolbar,
+.token,
+.actions > .btn,
+.new-package > .btn,
+.appearance-mode-switch > .btn {
   box-shadow: none !important;
   background: @white !important;
   border: 1px solid @taiga-light !important;
@@ -19,10 +23,11 @@
   }
 }
 
-.composer-action-bar-plugins, .composer-action-bar-content{
-  .btn-toolbar{
-    .content-mask{
-      background: @taiga-dark !important;
+.composer-action-bar-plugins,
+.composer-action-bar-content {
+  .btn-toolbar {
+    .content-mask {
+      background: white !important;
     }
   }
 }
@@ -36,8 +41,9 @@
 /**
  * Placeholder
  */
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: @white;
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: @white;
 }
 
 /**
@@ -52,15 +58,13 @@
   }
 }
 
-.toolbar-activity{
+.toolbar-activity {
   padding-right: 10px;
   .content-mask {
     background: @white !important;
     border: none !important;
   }
 }
-
-
 
 body.platform-win32 {
   .sheet-toolbar-container {
@@ -105,14 +109,14 @@ body.platform-win32 {
   }
 
   .secondary-items {
-    .item  {
+    .item {
       cursor: pointer;
       color: @taiga-light !important;
       background: @white !important;
 
       .button-dropdown {
         img {
-          background: @taiga-light  !important;
+          background: @taiga-light !important;
         }
       }
     }
@@ -131,10 +135,10 @@ body.platform-win32 {
  * Search bar
  */
 
- .search-bar .menu .header-container input.empty {
-   background: @inbox-lighter;
-   color: @white;
- }
+.search-bar .menu .header-container input.empty {
+  background: @inbox-lighter;
+  color: @white;
+}
 
 .content-container {
   .item.selected {

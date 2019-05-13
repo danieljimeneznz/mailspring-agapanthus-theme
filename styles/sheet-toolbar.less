@@ -1,0 +1,70 @@
+@import "ui-variables";
+
+div:not(.layout-mode-popout) {
+  .sheet-toolbar {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+    border: none;
+    height: @header-bar-height;
+    max-height: @header-bar-height;
+    .sheet-toolbar-container {
+      background: @toolbar-bg;
+      > div {
+        height: @header-bar-height;
+        padding-top: 5px;
+      }
+
+      .item-container {
+        padding-right: 0 !important;
+      }
+
+      .toolbar-activity {
+        padding: 0 !important;
+        margin-right: 1em !important;
+      }
+    }
+    div.item-container {
+      padding-right: 2em;
+    }
+    .toolbar-ThreadList {
+      padding-top: 0px !important;
+
+      .thread-search-bar {
+        background: @inbox-lighter;
+        height: 34px !important;
+        line-height: 34px !important;
+        box-shadow: none !important;
+        border-radius: 2px !important;
+
+        .suggestions {
+          top: 34px !important;
+        }
+
+        .layer-text {
+          color: @white;
+        }
+
+        .layer-tokens {
+          display: none;
+        }
+
+        img.search-accessory.search {
+          content: url("mailspring://agapanthus-mailspring/img/searchloupe-white@2x.png");
+          background-size: auto;
+        }
+      }
+    }
+  }
+}
+
+// TODO: CHECK WHAT THIS IS DOING...
+
+/*
+ * Compose email window
+ */
+.sheet-toolbar-container.mode-popout {
+  background: @taiga-dark !important;
+}
+
+.window-title {
+  color: @white;
+}

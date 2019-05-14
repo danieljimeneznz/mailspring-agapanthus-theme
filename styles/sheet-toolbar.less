@@ -6,6 +6,8 @@ div:not(.layout-mode-popout) {
     border: none;
     height: @header-bar-height;
     max-height: @header-bar-height;
+
+    // Generic toolbar properties.
     .sheet-toolbar-container {
       background: @toolbar-bg;
       > div {
@@ -25,31 +27,199 @@ div:not(.layout-mode-popout) {
     div.item-container {
       padding-right: 2em;
     }
+
+    // Activity/compose button toolbar properties.
+    .toolbar-RootSidebar {
+      // Over-ride previously set image properties.
+      img {
+        zoom: 1 !important;
+        -webkit-mask-image: none !important;
+        -webkit-mask-repeat: none !important;
+        mask-image: none !important;
+        mask-repeat: none !important;
+        object-position: 0 !important;
+        background: none !important;
+
+        // New properties to be set for the images.
+        height: 18px;
+        background-size: auto !important;
+      }
+      .toolbar-activity {
+        img {
+          margin-top: 11px;
+          content: url("mailspring://agapanthus/icons/wave-square-solid.svg");
+        }
+      }
+
+      // Compose button properties.
+      .btn.btn-toolbar.item-compose {
+        position: fixed;
+        z-index: 999;
+        background: @compose-button-color!important;
+        bottom: 22px;
+        height: 52px;
+        display: block;
+        right: 20px;
+        border-radius: @compose-button-radius!important;
+        padding: 19px;
+        padding-top: 13px;
+        padding-right: 17px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28) !important;
+        img {
+          width: 15px;
+          content: url("mailspring://agapanthus/icons/edit-solid.svg");
+        }
+        &:hover {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.14),
+            0 8px 16px rgba(0, 0, 0, 0.28) !important;
+        }
+      }
+    }
+
+    // Main search bar properties.
     .toolbar-ThreadList {
       padding-top: 0px !important;
 
       .thread-search-bar {
         background: @inbox-lighter;
+        color: white;
         height: 34px !important;
         line-height: 34px !important;
         box-shadow: none !important;
         border-radius: 2px !important;
+        padding: 0 10px;
+        width: 100% !important;
 
         .suggestions {
           top: 34px !important;
         }
 
         .layer-text {
-          color: @white;
+          color: white;
+          padding-left: 10px;
         }
 
         .layer-tokens {
           display: none;
         }
 
-        img.search-accessory.search {
-          content: url("mailspring://agapanthus/img/searchloupe-white@2x.png");
+        img {
+          width: 17px;
+          height: 17px;
           background-size: auto;
+        }
+
+        img.search-accessory.search {
+          content: url("mailspring://agapanthus/icons/search-solid.svg");
+        }
+
+        img.search-accessory.clear {
+          content: url("mailspring://agapanthus/icons/times-circle-solid.svg");
+        }
+      }
+    }
+
+    // Top right hand side menu bar.
+    .toolbar-MessageList,
+    .toolbar-MessageListSidebar {
+      .btn.btn-toolbar {
+        padding: 0 10px !important;
+      }
+
+      // Over-ride previously set image properties.
+      img {
+        zoom: 1 !important;
+        -webkit-mask-image: none !important;
+        -webkit-mask-repeat: none !important;
+        mask-image: none !important;
+        mask-repeat: none !important;
+        object-position: 0 !important;
+        background: none !important;
+
+        // New properties to be set for the images.
+        height: 18px;
+        background-size: auto !important;
+      }
+
+      // Upper right corner cog.
+      .toolbar-menu-control {
+        img {
+          content: url("mailspring://agapanthus/icons/cog-solid.svg");
+        }
+      }
+
+      // Upper right corner users.
+      .mode-toggle {
+        img {
+          content: url("mailspring://agapanthus/icons/users-solid.svg");
+        }
+      }
+
+      .message-toolbar-items {
+        .thread-sharing-button {
+          img {
+            content: url("mailspring://agapanthus/icons/share-square-solid.svg");
+          }
+        }
+
+        .snooze-button {
+          img {
+            content: url("mailspring://agapanthus/icons/clock-solid.svg");
+          }
+        }
+
+        .btn-category-picker {
+          img {
+            content: url("mailspring://agapanthus/icons/folder-solid.svg");
+          }
+        }
+
+        .btn[title="Mark as Read"] {
+          img {
+            content: url("mailspring://agapanthus/icons/envelope-solid.svg");
+          }
+        }
+
+        .btn[title="Mark as Unread"] {
+          img {
+            content: url("mailspring://agapanthus/icons/envelope-open-solid.svg");
+          }
+        }
+
+        .btn[title="Star"] {
+          img {
+            content: url("mailspring://agapanthus/icons/star-regular.svg");
+          }
+        }
+
+        .btn[title="Unstar"] {
+          img {
+            content: url("mailspring://agapanthus/icons/star-solid.svg");
+          }
+        }
+
+        .btn[title="Move to Trash"] {
+          img {
+            content: url("mailspring://agapanthus/icons/trash-solid.svg");
+          }
+        }
+
+        .btn[title="Mark as Spam"] {
+          img {
+            content: url("mailspring://agapanthus/icons/exclamation-circle-solid.svg");
+          }
+        }
+
+        .btn[title="Not Spam"] {
+          img {
+            content: url("mailspring://agapanthus/icons/exclamation-circle-solid.svg");
+          }
+        }
+
+        .btn[title="Archive"] {
+          img {
+            content: url("mailspring://agapanthus/icons/archive-solid.svg");
+          }
         }
       }
     }
@@ -66,5 +236,5 @@ div:not(.layout-mode-popout) {
 }
 
 .window-title {
-  color: @white;
+  color: white;
 }

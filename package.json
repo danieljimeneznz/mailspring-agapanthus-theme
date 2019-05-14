@@ -8,7 +8,6 @@
     "mailspring": "*"
   },
   "styleSheets": [
-    "compose-button",
     "compose",
     "controls",
     "email-frame",

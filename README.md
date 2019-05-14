@@ -10,6 +10,6 @@ Mailspring theme inspired by Inbox, and Google Cloud Console. Forked from [Agapa
 
 ## Installing
 
-1. [Download Mailspring email client.](https://getmailspring.com/)
-2. [Download the master branch.](https://github.com/danieljimeneznz/agapanthus-mailspring-theme)
+1. Download [Mailspring](https://getmailspring.com/).
+2. Clone this repository or download the [latest release](https://github.com/danieljimeneznz/agapanthus-mailspring-theme/archive/latest.zip).
 3. Open `Install Theme...` and select the folder.

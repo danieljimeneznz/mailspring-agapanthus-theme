@@ -47,7 +47,7 @@ div:not(.layout-mode-popout) {
       .toolbar-activity {
         img {
           margin-top: 11px;
-          content: url("mailspring://agapanthus/icons/wave-square-solid.svg");
+          content: url("mailspring://agapanthus/icons/chart-line-solid.svg");
         }
       }
 
@@ -121,7 +121,10 @@ div:not(.layout-mode-popout) {
 
     // Top right hand side menu bar.
     .toolbar-MessageList,
-    .toolbar-MessageListSidebar {
+    .toolbar-MessageListSidebar,
+    .toolbar-DraftList,
+    .toolbar-ActivityContent,
+    .toolbar-Preferences {
       .btn.btn-toolbar {
         padding: 0 10px !important;
       }
@@ -174,9 +177,15 @@ div:not(.layout-mode-popout) {
           }
         }
 
-        .btn-category-picker {
+        .btn[title="Move to Folder"].btn-category-picker {
           img {
-            content: url("mailspring://agapanthus/icons/folder-solid.svg");
+            content: url("mailspring://agapanthus/icons/folder-move-solid.svg");
+          }
+        }
+
+        .btn[title="Apply Label"].btn-category-picker {
+          img {
+            content: url("mailspring://agapanthus/icons/tag-solid.svg");
           }
         }
 

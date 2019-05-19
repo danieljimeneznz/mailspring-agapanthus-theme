@@ -1,6 +1,6 @@
 {
-  "name": "Agapanthus",
-  "theme": "agapanthus-mailspring",
+  "name": "agapanthus",
+  "theme": "mailspring-agapanthus",
   "version": "2.0.0-rc1",
   "description": "A clean, Inbox-inspired theme for Mailspring",
   "license": "GPL-3.0",
@@ -12,9 +12,9 @@
     "controls",
     "email-frame",
     "notifications",
-    "sheet-toolbar",
     "sidebar",
-    "threads"
+    "threads",
+    "toolbar"
   ],
   "private": true
 }

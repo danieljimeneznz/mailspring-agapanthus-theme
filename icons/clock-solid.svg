@@ -1,4 +1,9 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" class="svg-inline--fa fa-clock fa-w-16" role="img" 
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-    <path fill="white" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" xml:space="preserve">
+	<path fill="white" d="M500,31.25c-267.578,0-484.375,216.797-484.375,484.375S232.422,1000,500,1000
+	s484.375-216.797,484.375-484.375S767.578,31.25,500,31.25z M611.523,715.039L439.258,589.844c-6.055-4.492-9.57-11.523-9.57-18.945
+	V242.188c0-12.891,10.547-23.438,23.438-23.438h93.75c12.891,0,23.438,10.547,23.438,23.438v268.945l124.023,90.234
+	c10.547,7.617,12.695,22.266,5.078,32.813l-55.078,75.781C636.719,720.313,622.07,722.656,611.523,715.039L611.523,715.039z"/>
 </svg>
